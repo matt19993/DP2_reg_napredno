@@ -45,7 +45,7 @@ long    interrupt_cycles = 0;
 int interrupt_overflow_counter = 0;
 
 /**************************************************************
-* spremenljivke, ki jih potrebujemo za regulator
+* spremenljivke, ki jih potrebujemo
 **************************************************************/
 
 
