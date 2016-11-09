@@ -11,7 +11,7 @@
 // za izracunun napetostni
 long napetost_raw = 0;
 float napetost_offset = 1971;
-float napetost_gain = - ???;
+float napetost_gain = ???;
 float napetost = 0.0;
 
 // za izracun toka
@@ -47,7 +47,7 @@ int interrupt_overflow_counter = 0;
 /**************************************************************
 * spremenljivke, ki jih potrebujemo
 **************************************************************/
-
+float	zeljena_nap = 0.0;
 
 
 
@@ -189,7 +189,7 @@ void PER_int_setup(void)
     dlog.iptr1 = &napetost;
     dlog.iptr2 = &tok;
     dlog.iptr3 = &zeljena_nap;
-    dlog.iptr4 = &zeljen_tok;
+    dlog.iptr4 = &tok;
 
 
     // registriram prekinitveno rutino
